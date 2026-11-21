@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Medical Records Export - John Doe</title>
+        <style>
+            body { 
+                font-family: Arial, sans-serif; 
+                margin: 40px; 
+                color: #333;
+                line-height: 1.6;
+            }
+            .header { 
+                text-align: center;
+                margin-bottom: 40px; 
+                padding-bottom: 30px;
+                border-bottom: 3px solid #4f46e5;
+            }
+            .logo-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            .hospital-logo {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 20px;
+                border-radius: 20px;
+                box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+                object-fit: cover;
+            }
+            .hospital-name {
+                font-size: 32px;
+                font-weight: bold;
+                color: #4f46e5;
+                margin-bottom: 5px;
+            }
+            .hospital-tagline {
+                color: #64748b;
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+            .hospital-address {
+                color: #94a3b8;
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            h1 { 
+                color: #1e293b; 
+                margin: 20px 0 10px;
+                font-size: 26px;
+                text-align: center;
+            }
+            .export-info {
+                text-align: center;
+                color: #64748b;
+                font-size: 14px;
+                margin-bottom: 30px;
+                padding: 10px;
+                background: #f8fafc;
+                border-radius: 50px;
+                display: inline-block;
+                padding: 8px 25px;
+            }
+            h2 { 
+                color: #1e293b; 
+                margin-top: 40px;
+                margin-bottom: 20px;
+                padding-left: 15px;
+                border-left: 5px solid #4f46e5;
+                font-size: 22px;
+            }
+            table { 
+                width: 100%; 
+                border-collapse: collapse; 
+                margin: 25px 0; 
+                box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+                border-radius: 12px;
+                overflow: hidden;
+            }
+            th { 
+                background: #4f46e5; 
+                color: white; 
+                padding: 15px; 
+                text-align: left; 
+                font-weight: 600;
+                font-size: 15px;
+            }
+            td { 
+                border: 1px solid #e2e8f0; 
+                padding: 12px 15px; 
+            }
+            tr:nth-child(even) {
+                background: #f8fafc;
+            }
+            .info-section {
+                background: #f8fafc;
+                padding: 25px;
+                border-radius: 15px;
+                margin: 25px 0;
+                border: 1px solid #e2e8f0;
+            }
+            .info-section p {
+                margin: 10px 0;
+                font-size: 15px;
+            }
+            .info-section strong {
+                color: #1e293b;
+                width: 180px;
+                display: inline-block;
+            }
+            .footer { 
+                margin-top: 60px; 
+                text-align: center; 
+                color: #94a3b8; 
+                font-size: 12px;
+                padding-top: 25px;
+                border-top: 2px solid #e2e8f0;
+            }
+            .watermark {
+                position: fixed;
+                bottom: 30px;
+                right: 30px;
+                opacity: 0.05;
+                font-size: 80px;
+                transform: rotate(-15deg);
+                pointer-events: none;
+                color: #4f46e5;
+                font-weight: bold;
+            }
+            .export-id {
+                font-family: monospace;
+                background: #e2e8f0;
+                padding: 3px 8px;
+                border-radius: 5px;
+                color: #4f46e5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo-container">
+                <img src="http://localhost/abc_hospital_virtual_appointment/images/ABC logo.webp" 
+                     alt="ABC Hospital Logo" 
+                     class="hospital-logo"
+                     onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120"><rect width="120" height="120" rx="24" fill="%234f46e5"/><text x="60" y="80" font-family="Arial" font-size="48" font-weight="bold" text-anchor="middle" fill="white">ABC</text></svg>'">
+            </div>
+            <div class="hospital-name">ABC Virtual Healthcare</div>
+            <div class="hospital-tagline">Your Trusted Healthcare Partner Since 1959</div>
+            <div class="hospital-address">123 Hospital Road, Colombo 05, Sri Lanka</div>
+        </div>
+        
+        <div style="text-align: center;">
+            <h1>Medical Records Export</h1>
+            <div class="export-info">
+                <strong>Export Date:</strong> 2026-06-01 17:18:56 | 
+                <strong>Export ID:</strong> <span class="export-id">MED-20260601-9796</span><br>
+                <strong>Patient:</strong> John Doe
+            </div>
+        </div><h2>Personal Information</h2><div class="info-section"><p><strong>Full Name:</strong> John Doe</p><p><strong>Email:</strong> john@example.com</p><p><strong>Phone:</strong> +94 77 123 4567</p><p><strong>Nic Passport:</strong> 853151234V</p><p><strong>Date Of Birth:</strong> 1985-05-15</p><p><strong>Age:</strong> 41 years</p><p><strong>Patient Id:</strong> PAT-12345</p><p><strong>Address:</strong> 123 Main Street, Colombo 05</p><p><strong>Blood Group:</strong> O+</p><p><strong>Emergency Contact:</strong> +94 71 987 6543</p></div><h2>Medical Records</h2><table><tr><th>Date</th><th>Doctor</th><th>Department</th><th>Diagnosis</th><th>Prescription</th><th>Notes</th></tr><tr><td>2026-02-15</td><td>Dr. Kamal Perera</td><td>Cardiology</td><td>Hypertension follow-up</td><td>Amlodipine 5mg daily</td><td>Blood pressure stable at 120/80</td></tr><tr><td>2026-01-10</td><td>Dr. Nimali Silva</td><td>General Medicine</td><td>Seasonal allergies</td><td>Cetirizine 10mg</td><td>Allergic to dust and pollen</td></tr></table><div style="margin: 30px 0; padding: 15px; background: #f1f5f9; border-radius: 10px; text-align: center;">
+        <p style="color: #475569;"><strong>Data Scope:</strong> All</p>
+        <p style="color: #475569; font-size: 13px;">This document contains confidential medical information. Handle with care.</p>
+    </div><div class="footer">
+        <p>This document is generated under the Sri Lanka Personal Data Protection Act No. 9 of 2022</p>
+        <p>© 2026 ABC Virtual Healthcare. All rights reserved.</p>
+        <p style="margin-top: 10px;">📞 +94 11 234 5678 | 📧 dpo@abchospital.lk | 🌐 www.abchospital.lk</p>
+        <p style="margin-top: 15px; font-size: 11px; color: #94a3b8;">Export ID: MED-20260601-9149 | Generated for: John Doe</p>
+    </div>
+    
+    <div class="watermark">ABC HOSPITAL</div>
+    
+    </body>
+    </html>

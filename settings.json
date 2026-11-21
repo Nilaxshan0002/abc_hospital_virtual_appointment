@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.php": "php"
+    },
+    "[php]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    "php.suggest.basic": false,
+    "php.validate.enable": true,
+    "php.validate.executablePath": "C:/xampp/php/php.exe" // Adjust for your system
+}

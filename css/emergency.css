@@ -1,0 +1,356 @@
+/* Emergency Page Styles */
+
+/* Emergency Header */
+.emergency-header {
+    background: linear-gradient(-45deg, #dc2626, #ef4444, #b91c1c, #7f1d1d);
+    background-size: 400% 400%;
+    animation: emergencyGradient 10s ease infinite;
+}
+
+@keyframes emergencyGradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+/* Emergency Banner */
+.emergency-banner {
+    padding: 40px 0;
+    background: #fef2f2;
+}
+
+.emergency-contact-card {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    box-shadow: 0 10px 30px rgba(220, 38, 38, 0.1);
+    border-left: 5px solid #dc2626;
+}
+
+.emergency-icon {
+    width: 80px;
+    height: 80px;
+    background: #fee2e2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emergency-icon i {
+    font-size: 40px;
+    color: #dc2626;
+}
+
+.emergency-details h2 {
+    font-size: 28px;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.emergency-number {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #dc2626;
+    margin-bottom: 10px;
+}
+
+.emergency-number i {
+    font-size: 28px;
+}
+
+.btn-call-now {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #dc2626;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: 2px solid #dc2626;
+}
+
+.btn-call-now:hover {
+    background: #b91c1c;
+    border-color: #b91c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+}
+
+/* Emergency Services */
+.emergency-services {
+    padding: 80px 0;
+    background: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: #f8f9fa;
+    border-radius: 20px;
+    padding: 30px;
+    transition: all 0.3s;
+    border: 1px solid #e0e0e0;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border-color: #dc2626;
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #dc2626, #ef4444);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.service-icon i {
+    font-size: 30px;
+    color: white;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #1a1a2e;
+}
+
+.service-card p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+}
+
+.service-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.service-features li i {
+    color: #dc2626;
+}
+
+/* Emergency Team */
+.emergency-team {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.team-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.team-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.team-card:hover .team-image img {
+    transform: scale(1.1);
+}
+
+.team-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.team-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #1a1a2e;
+}
+
+.team-info p {
+    color: #dc2626;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.team-info .experience {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Emergency Facilities */
+.emergency-facilities {
+    padding: 60px 0;
+    background: white;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.facility-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.facility-item:hover {
+    transform: translateX(10px);
+    background: #fee2e2;
+}
+
+.facility-icon {
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.facility-icon i {
+    font-size: 24px;
+    color: #dc2626;
+}
+
+.facility-info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #1a1a2e;
+}
+
+.facility-info p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Emergency CTA */
+.emergency-cta {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+
+.btn-emergency {
+    background: #dc2626;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+    border: 2px solid #dc2626;
+}
+
+.btn-emergency:hover {
+    background: #b91c1c;
+    border-color: #b91c1c;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(220, 38, 38, 0.3);
+}
+
+.btn-outline-light {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+    margin-left: 15px;
+}
+
+.btn-outline-light:hover {
+    background: white;
+    color: #1a1a2e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .emergency-contact-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .emergency-number {
+        justify-content: center;
+    }
+    
+    .cta-content h2 {
+        font-size: 28px;
+    }
+    
+    .btn-emergency, .btn-outline-light {
+        display: block;
+        margin: 10px auto;
+        width: 100%;
+    }
+}

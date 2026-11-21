@@ -1,0 +1,9 @@
+[2026-03-08 04:18:57] Connection error: SQLSTATE[HY000] [1049] Unknown database 'abc_virtual_hospital'
+[2026-07-05 17:11:08] Connection error: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[2026-07-06 08:10:36] Connection error: SQLSTATE[HY000] [2006] MySQL server has gone away
+[2026-07-06 08:11:37] Connection error: SQLSTATE[HY000] [2006] MySQL server has gone away
+[2026-08-13 11:18:49] Connection error: SQLSTATE[HY000] [2006] MySQL server has gone away
+[2026-08-13 11:18:59] Connection error: SQLSTATE[HY000] [2006] MySQL server has gone away
+[2026-08-22 10:49:23] Connection error: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[2026-08-30 20:52:32] Connection error: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
+[2026-11-21 07:56:48] Connection error: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it
